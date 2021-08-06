@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(42, 59%, 94%);
+  font-family: "Lato", sans-serif;
+}
+header {
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_header {
+  display: flex;
+}
+menu {
+  display: none;
+}
+.sub_header img {
+  width: 5.5rem;
+}
+.sub_header a {
+  text-decoration: none;
+  font-size: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(236, 191, 105, 1) 0%,
+    rgba(234, 81, 116, 1) 100%
+  );
+  padding: 7px 10px;
+  border-radius: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/*---------------HERO SECTION--------------*/
+.Hero {
+  padding: 5rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sub_Hero {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 20rem;
+}
+.sub_Hero img {
+  position: absolute;
+  width: 15rem;
+}
+.pic1 {
+  transform: rotate(-40deg);
+}
+.pic2 {
+  transform: rotate(-25deg);
+}
+.pic3 {
+  transform: rotate(-14deg);
+}
+.sub_hero2 h1 {
+  font-family: "Playfair Display", serif;
+  line-height: 50px;
+  font-weight: 900;
+  font-size: 40px;
+}
+.sub_hero2 p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #585857;
+}
+form {
+  margin-top: 1rem;
+}
+form input {
+  width: 18.4rem;
+  height: 3rem;
+  outline: #fff;
+  border: #fff;
+  border-radius: 7px;
+  padding: 0 2rem 0 1rem;
+}
+input::placeholder {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: rgb(22, 22, 22);
+  padding-left: 10px;
+}
+.button2 {
+  display: none;
+}
+form button {
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: #4977ea;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: 1rem;
+  padding: 1rem 6.7rem;
+}
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.checkmark img {
+  margin-left: -1rem;
+}
+.checkmark p {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.social {
+  display: flex;
+  margin-top: 4rem;
+  font-size: 18px;
+  margin-left: 1rem;
+}
+.social a {
+  display: flex;
+  text-decoration: none;
+  color: #585857;
+  margin-right: 30px;
+}
+
+footer {
+  font-size: 18px;
+  display: flex;
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+footer div {
+  margin-left: 20px;
+}
+#question {
+  font-family: "Playfair Display", serif;
+}
+
+@media only screen and (min-width: 375px) {
+  form input {
+    width: 22rem;
+  }
+  form button {
+    width: 22rem;
+  }
+  .checkmark {
+    margin-left: -3rem;
+  }
+  .sub_hero {
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .sub_hero2 {
+    margin-right: 4rem;
+    margin-left: 1rem;
+  }
+  .checkmark {
+    margin-left: 0.2px;
+    margin-right: 1rem;
+  }
+  .social {
+    margin-left: 1.9rem;
+  }
+  footer {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sub_Hero img {
+    width: 22rem;
+  }
+  .Hero {
+    margin-top: -5rem;
+  }
+
+  .sub_hero2 {
+    margin-top: 5rem;
+  }
+  .sub_hero2 p {
+    font-size: 18px;
+  }
+  .sub_hero2 h1 {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  form {
+    display: flex;
+  }
+  form button {
+    display: none;
+  }
+  form input {
+    margin-right: 2rem;
+    height: 3rem;
+  }
+  .button2 {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4977ea;
+    padding: 20px 20px 10px 20px;
+    border-radius: 7px;
+  }
+  .checkmark {
+    margin-left: -20rem;
+  }
+  .social {
+    padding-top: 20px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+  }
+  footer {
+    padding-left: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  menu {
+    display: flex;
+    margin-right: 5rem;
+    font-size: 18px;
+  }
+  header {
+    margin: 2rem 1rem 0 2rem;
+  }
+  .Burger {
+    display: none;
+  }
+  .sub_header img {
+    width: 7rem;
+  }
+  menu ul a {
+    text-decoration: none;
+    margin-right: 1rem;
+    outline: none;
+    color: #585857;
+  }
+  span {
+    display: flex;
+    list-style: none;
+    margin-left: 6rem;
+  }
+  span li a {
+    text-decoration: none;
+    color: #585857;
+    margin-left: 10px;
+  }
+  .Sub_list {
+    color: #eee;
+    background-color: #4977ea;
+    padding: 15px 15px;
+    border-radius: 7px;
+  }
+  .Hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sub_Hero {
+    grid-column: 2;
+    padding-top: 4rem;
+  }
+  .sub_hero2 {
+    width: 30rem;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .sub_Hero {
+    height: 30rem;
+  }
+  .sub_hero2 {
+    padding-top: 3.5rem;
+  }
+  form input {
+    width: 18rem;
+    height: 4rem;
+  }
+  .checkmark {
+    margin-left: -7rem;
+  }
+  footer {
+    padding-left: 13rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  header {
+    padding: 4rem 4rem 0 1rem;
+  }
+  .Hero {
+    padding-left: 2rem;
+  }
+  .footer {
+    padding-left: 2rem;
+  }
+}
